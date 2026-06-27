@@ -14,7 +14,7 @@ The codebase and matching output logs are bundled into three distinct pipeline s
 
 * **`stage2_training.zip`**
     * `generate_predictions.py`: Fits the dual-core LightGBM models (Mean point baseline, $5^{\text{th}}$, and $95^{\text{th}}$ asymmetric quantiles) and computes the conformal correction factor ($Q_{1-\alpha}$). Partitions absolute widths into balanced **Low, Moderate, and High Risk Tiers** using width quantiles.
-    * `test_forecasting_results.csv`: Master prediction database mapped with unique store location identifiers (`store_id`, `item_number`).
+    * `test_forecasting_results.csv`: Master prediction database mapped which predicts daily sales of the products, includes **point estimates**, **quantile intervals**, **conformal bounds** and **risk tier**.
 
 * **`stage3_simulation.zip`**
     * `inventory_simulation.py`: Runs a post-prediction financial logistics case study, testing the uncertainty-aware conformal policy against a naive point baseline using standard retail holding costs ($0.10) vs stockout penalty fees ($2.00).
@@ -23,7 +23,7 @@ The codebase and matching output logs are bundled into three distinct pipeline s
 
 ---
 
-##  Core Metrics & Hackathon Takeaways
+##  Core Metrics 
 * **The Bottom Line:** Slashed total supply chain operational costs from **$20.57M** (naive point policy) to **$7.77M** (uncertainty-aware conformal policy).
 * **Stockout Protection:** Dropped lost product units from **9.99M** units down to **1.91M** units by providing a robust volatility shield over chaotic demand slices.
 * **Model Comparison:** While pure quantile regression builds uncalibrated retail intervals that collapse and underestimate risk during chaotic holiday rushes, conformal prediction acts as a vital reality check by mathematically stretching those safety ranges to guarantee an honest $95\%$ accuracy shield on the store floor.
