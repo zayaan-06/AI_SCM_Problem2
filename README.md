@@ -1,6 +1,6 @@
 ## Conformal Inventory Optimization (M5 Hackathon)
 
-An end-to-end machine learning pipeline built to crush uncalibrated uncertainty in high-volume retail supply chains. By wrapping parallel LightGBM quantile regressors with **Split Conformal Prediction**, this framework mathematically nears a $95\%$ statistical coverage shield while slicing logistics operations costs by **$62.2 % \%$**.
+An end-to-end machine learning pipeline built to crush uncalibrated uncertainty in high-volume retail supply chains. By wrapping parallel LightGBM quantile regressors with **Split Conformal Prediction**, this framework mathematically nears a $95\%$ statistical coverage shield while slicing logistics operations costs by **$62.2 percent \%$**.
 
 ---
 
