@@ -23,7 +23,7 @@ The codebase and matching output logs are bundled into three distinct pipeline s
 
 ---
 
-## ⚡ Core Metrics & Hackathon Takeaways
+##  Core Metrics & Hackathon Takeaways
 * **The Bottom Line:** Slashed total supply chain operational costs from **$20.57M** (naive point policy) to **$7.77M** (uncertainty-aware conformal policy).
 * **Stockout Protection:** Dropped lost product units from **9.99M** units down to **1.91M** units by providing a robust volatility shield over chaotic demand slices.
 * **Model Comparison:** While pure quantile regression builds uncalibrated retail intervals that collapse and underestimate risk during chaotic holiday rushes, conformal prediction acts as a vital reality check by mathematically stretching those safety ranges to guarantee an honest $95\%$ accuracy shield on the store floor.
